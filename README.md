@@ -13,3 +13,24 @@ Linux 3.10.0
 make
 make modules_install
 ```
+
+### keepalived.conf
+```
+...
+virtual_server 192.168.0.1 80 {
+    lvs_sched fw
+    ...
+    ! Primary server
+    real_server 192.168.0.2 80 {
+        weight 101
+        ...
+    }
+    ! Standby server
+    real_server 192.168.0.3 80 {
+        weight 100
+        ...
+    }
+    ...
+}
+...
+```
