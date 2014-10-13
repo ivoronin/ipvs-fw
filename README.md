@@ -1,4 +1,4 @@
 ip_vs_fw
 ========
 
-Fixed weight scheduler for IP Virtual Server
+Fixed weighted scheduler for IP Virtual Server

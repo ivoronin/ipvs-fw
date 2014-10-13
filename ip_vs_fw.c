@@ -1,5 +1,5 @@
 /*
- * IPVS:        Fixed-Weight Scheduling module
+ * IPVS:        Fixed Weighted Scheduling module
  *
  * Authors:     Ilya Voronin <ivoronin@jet.msk.su>
  *
@@ -19,7 +19,7 @@
 #include <net/ip_vs.h>
 
 /*
- *	Fixed Weight scheduling
+ *	Fixed Weighted scheduling
  */
 static struct ip_vs_dest *
 ip_vs_fw_schedule(struct ip_vs_service *svc, const struct sk_buff *skb)
